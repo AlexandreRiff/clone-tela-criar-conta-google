@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.content-form {
+  max-width: 600px;
+  padding: 48px 40px 40px 40px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  outline-color: #1a73e8;
+  background-color: transparent;
+}
+
+form > span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+form > a {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+label {
+  font-size: 14px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+.input-group > div {
+  flex: 1;
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: top 0.2s;
+}
+
+.input-group input {
+  width: 100%;
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+  top: -11px;
+  padding: 0 6px;
+  font-size: 0.8rem;
+  color: #1a73e8;
+  background-color: #fff;
+}
+
+.input-group > i {
+  vertical-align: middle;
+  font-size: 28px;
+  color: #5a5a5a;
+  cursor: pointer;
+}
+
+.input-username {
+  padding-right: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+}
+
+.input-username:focus-within {
+  outline: #1a73e8 auto 1px;
+}
+
+.input-username input {
+  border: none;
+}
+
+.input-username input:focus {
+  outline: none;
+}
+
+.input-username span {
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+.space-right {
+  margin-right: 18px;
+}
+
+.show-password {
+  display: none;
+}

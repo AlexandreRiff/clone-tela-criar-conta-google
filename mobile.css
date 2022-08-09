@@ -1,0 +1,36 @@
+@media screen and (max-width: 468px) {
+  .content-form {
+    padding: 25px;
+    border: none;
+  }
+
+  .input-group:not(.input-username) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-group:not(.input-username) > div:first-child {
+    margin-bottom: 28px;
+  }
+
+  .input-group > i {
+    display: none;
+  }
+
+  .space-right {
+    margin-right: 0;
+  }
+
+  .show-password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 0 0;
+  }
+
+  .show-password input {
+    width: 20px;
+    height: 20px;
+    margin: 0 18px 0 0;
+  }
+}
